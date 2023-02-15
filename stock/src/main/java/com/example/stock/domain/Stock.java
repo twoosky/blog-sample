@@ -23,4 +23,11 @@ public class Stock {
         this.productId = productId;
         this.quantity = quantity;
     }
+
+    public void decrease(Long quantity) {
+        if(this.quantity - quantity < 0) {
+            throw new RuntimeException("구매 수량보다 재고가 적습니다.");
+        }
+        this.quantity = this.quantity - quantity;
+    }
 }
