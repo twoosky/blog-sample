@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/stock_example
-    username: ${USER_NAME}
-    password: ${PASSWORD}
+    username: root
+    password: dlgksmf4051
 
 logging:
   level:

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.DemoApplicationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-12T14:18:29" hostname="haneul" time="0.01">
+<testsuite name="com.example.demo.DemoApplicationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-13T08:34:15" hostname="haneul" time="0.005">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.demo.DemoApplicationTests" time="0.01">
-    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1084f78c testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1084f78c testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+  <testcase name="contextLoads()" classname="com.example.demo.DemoApplicationTests" time="0.005">
+    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@faec277 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@faec277 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:142)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
 	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
@@ -91,12 +91,11 @@
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloController' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/controller/HelloController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at app//org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Invocation of init method failed
+	at app//org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:195)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:420)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
 	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
 	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
 	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
@@ -118,83 +117,105 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:184)
 	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:118)
 	... 87 more
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at app//org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at app//org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
-	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
-	... 111 more
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1408)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:415)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at app//org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
-	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
-	at app//org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
-	... 125 more
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'REDISHOST' in value &quot;${REDISHOST}&quot;
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230)
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79)
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60)
-	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:153)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:149)
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85)
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74)
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
-	... 146 more
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1602)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1533)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1358)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1341)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1059)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:398)
+	at app//org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at app//org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at app//org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at app//org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:393)
+	at app//org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:373)
+	at app//org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97)
+	at app//org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:237)
+	at app//com.example.demo.redis.RedisRepository.set(RedisRepository.java:17)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at app//com.example.demo.redis.RedisRepository$$SpringCGLIB$$0.set(&lt;generated&gt;)
+	at app//com.example.demo.controller.HelloController.init(HelloController.java:17)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424)
+	at app//org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:368)
+	at app//org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:192)
+	... 110 more
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to redis/&lt;unresolved&gt;:6379
+	at app//io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at app//io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at app//io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350)
+	at app//io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at app//org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:111)
+	at java.base@17.0.6/java.util.Optional.orElseGet(Optional.java:364)
+	at app//org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:111)
+	at app//org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1531)
+	... 143 more
+Caused by: java.net.UnknownHostException: redis: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1255)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:990)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </failure>
   </testcase>
-  <system-out><![CDATA[23:18:27.851 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [DemoApplicationTests]: using SpringBootContextLoader
-23:18:27.858 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:18:27.859 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:18:27.882 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [DemoApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-23:18:27.951 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/DemoApplication.class]
-23:18:27.952 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
-23:18:28.100 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [DemoApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-23:18:28.102 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DemoApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+  <system-out><![CDATA[17:34:12.947 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [DemoApplicationTests]: using SpringBootContextLoader
+17:34:12.952 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:34:12.953 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:34:12.971 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [DemoApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:34:13.045 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/DemoApplication.class]
+17:34:13.047 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+17:34:13.153 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [DemoApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:34:13.155 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DemoApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -204,23 +225,22 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'RE
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-12T23:18:28.518+09:00  INFO 110376 --- [    Test worker] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 17.0.6 with PID 110376 (started by haneul in /home/haneul/workspace/study/spring/springboot_docker_build/demo)
-2023-03-12T23:18:28.521+09:00  INFO 110376 --- [    Test worker] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2023-03-12T23:18:29.371+09:00  INFO 110376 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-03-12T23:18:29.374+09:00  INFO 110376 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-03-12T23:18:29.412+09:00  INFO 110376 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-2023-03-12T23:18:29.753+09:00  WARN 110376 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloController' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/controller/HelloController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-2023-03-12T23:18:29.771+09:00  INFO 110376 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+2023-03-13T17:34:13.497+09:00  INFO 161453 --- [    Test worker] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 17.0.6 with PID 161453 (started by haneul in /home/haneul/workspace/study/spring/springboot_docker_build/demo)
+2023-03-13T17:34:13.500+09:00  INFO 161453 --- [    Test worker] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-03-13T17:34:14.137+09:00  INFO 161453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13T17:34:14.140+09:00  INFO 161453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13T17:34:14.169+09:00  INFO 161453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-03-13T17:34:15.115+09:00  WARN 161453 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Invocation of init method failed
+2023-03-13T17:34:15.257+09:00  INFO 161453 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-03-12T23:18:29.801+09:00 ERROR 110376 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2023-03-13T17:34:15.294+09:00 ERROR 161453 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloController' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/controller/HelloController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:195) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:420) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
@@ -328,77 +348,99 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 111 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1408) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:415) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 125 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'REDISHOST' in value "${REDISHOST}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.0.4.jar:3.0.4]
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.0.4.jar:3.0.4]
-	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:153) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:149) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 146 common frames omitted
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1602) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1533) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1358) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1341) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1059) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:398) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:393) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:373) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:237) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at com.example.demo.redis.RedisRepository.set(RedisRepository.java:17) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.6.jar:6.0.6]
+	at com.example.demo.redis.RedisRepository$$SpringCGLIB$$0.set(<generated>) ~[main/:na]
+	at com.example.demo.controller.HelloController.init(HelloController.java:17) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:192) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 110 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to redis/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:111) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:111) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1531) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	... 143 common frames omitted
+Caused by: java.net.UnknownHostException: redis: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1255) ~[na:na]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:990) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-03-12T23:18:29.831+09:00 ERROR 110376 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.example.demo.DemoApplicationTests@25f723b0]
+2023-03-13T17:34:15.319+09:00 ERROR 161453 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.example.demo.DemoApplicationTests@1b475663]
 
-java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1084f78c testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@faec277 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@528c868, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@31c7528f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestAnnotation@34e93abc], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:142) ~[spring-test-6.0.6.jar:6.0.6]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.6.jar:6.0.6]
 	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.0.6.jar:6.0.6]
@@ -487,12 +529,11 @@ java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMerge
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloController' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/controller/HelloController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:195) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:420) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
@@ -514,73 +555,95 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:184) ~[spring-test-6.0.6.jar:6.0.6]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:118) ~[spring-test-6.0.6.jar:6.0.6]
 	... 87 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisRepository' defined in file [/home/haneul/workspace/study/spring/springboot_docker_build/demo/build/classes/java/main/com/example/demo/redis/RedisRepository.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 111 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1408) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:415) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 125 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'REDISHOST' in value "${REDISHOST}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-3.0.4.jar:3.0.4]
-	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-3.0.4.jar:3.0.4]
-	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:153) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:149) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.6.jar:6.0.6]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.6.jar:6.0.6]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.6.jar:6.0.6]
-	... 146 common frames omitted
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1602) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1533) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1358) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1341) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1059) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:398) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:393) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:373) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:237) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at com.example.demo.redis.RedisRepository.set(RedisRepository.java:17) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.6.jar:6.0.6]
+	at com.example.demo.redis.RedisRepository$$SpringCGLIB$$0.set(<generated>) ~[main/:na]
+	at com.example.demo.controller.HelloController.init(HelloController.java:17) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:424) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:192) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 110 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to redis/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216) ~[lettuce-core-6.2.3.RELEASE.jar:6.2.3.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:111) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:111) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1531) ~[spring-data-redis-3.0.3.jar:3.0.3]
+	... 143 common frames omitted
+Caused by: java.net.UnknownHostException: redis: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1255) ~[na:na]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106) ~[netty-resolver-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:990) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.89.Final.jar:4.1.89.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 ]]></system-out>
   <system-err><![CDATA[

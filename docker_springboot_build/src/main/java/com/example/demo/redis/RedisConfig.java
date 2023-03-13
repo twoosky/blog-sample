@@ -7,6 +7,8 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class RedisConfig {
@@ -19,14 +21,16 @@ public class RedisConfig {
 
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {
-        RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(host, port);
-        return new LettuceConnectionFactory(config);
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration(host, port);
+        return new LettuceConnectionFactory(redisStandaloneConfiguration);
     }
 
     @Bean
-    public RedisTemplate<String, Integer> redisTemplate() {
-        RedisTemplate<String, Integer> template = new RedisTemplate<>();
+    public RedisTemplate<?, ?> redisTemplate() {
+        RedisTemplate<?, ?> template = new RedisTemplate<>();
         template.setConnectionFactory(redisConnectionFactory());
+        template.setKeySerializer(new StringRedisSerializer());
+        template.setValueSerializer(new GenericToStringSerializer<>(Integer.class));
         // Add some specific configuration here. Key serializers, etc.
         return template;
     }
