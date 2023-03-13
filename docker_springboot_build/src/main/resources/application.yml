@@ -1,5 +1,0 @@
-spring:
-  data:
-    redis:
-      host: ${REDISHOST}
-      port: 6379
