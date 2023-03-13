@@ -4,7 +4,6 @@ services:
     image: mysql:5.7
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=dlgksmf4051
       - MYSQL_USER=haneul
       - MYSQL_PASSWORD=1234
       - MYSQL_DATABASE=myapp
