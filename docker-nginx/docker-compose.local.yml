@@ -1,5 +1,19 @@
 version: "3"
 services:
+  mysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      - MYSQL_USER=haneul
+      - MYSQL_PASSWORD=1234
+      - MYSQL_DATABASE=myapp
+      - TZ=Asia/Seoul
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    ports:
+      - "33306:3306"
   springboot:
     build: .
     environment:
@@ -7,6 +21,8 @@ services:
       - SERVER_PORT=8081
     ports:
       - "8081:8081"
+    depends_on:
+      - mysql
   nginx:
     restart: always
     image: nginx
