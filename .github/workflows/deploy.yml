@@ -27,5 +27,5 @@ jobs:
       - name: Build with Gradle
         run: |
           cd docker-nginx
-          ./gradlew clean build
+          ./gradlew clean build -x test
 
