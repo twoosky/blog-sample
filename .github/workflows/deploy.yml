@@ -35,12 +35,31 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name : Build Docker Image & Push to Docker Hub
+
+      - name: Build Docker Image & Push to Docker Hub
         run: |
-          docker build ./docker-nginx -t twoosky/docker-springboot
-          docker build ./docker-nginx/nginx -t twoosky/docker-nginx
+          docker build . -t twoosky/docker-springboot
+          docker build ./nginx -t twoosky/docker-nginx
           docker push twoosky/docker-springboot
           docker push twoosky/docker-nginx
+
+      - name: 현재 시간 가져오기
+        uses: 1466587594/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYY-MM-DDTHH-mm-ss
+          utcOffset: "+09:00"
+
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: docker-springboot-app
+          environment_name: Dockerspringbootapp-env
+          version_label: deploy-${{steps.current-time.outputs.formattedTime}}
+          region: ap-northeast-2
+          deployoment_package: ./docker-nginx/Dockerrun.aws.json
 
 
 
