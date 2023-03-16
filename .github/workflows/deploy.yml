@@ -38,8 +38,8 @@ jobs:
 
       - name: Build Docker Image & Push to Docker Hub
         run: |
-          docker build . -t twoosky/docker-springboot
-          docker build ./nginx -t twoosky/docker-nginx
+          docker build ./docker-nginx/ -t twoosky/docker-springboot
+          docker build ./docker-nginx/nginx -t twoosky/docker-nginx
           docker push twoosky/docker-springboot
           docker push twoosky/docker-nginx
 
