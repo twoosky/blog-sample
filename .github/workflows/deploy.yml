@@ -59,7 +59,7 @@ jobs:
           environment_name: Dockerspringbootapp-env
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
-          deployoment_package: ./docker-nginx/Dockerrun.aws.json
+          deployoment_package: Dockerrun.aws.json
 
 
 
