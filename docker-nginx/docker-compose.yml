@@ -2,9 +2,9 @@ version: "3"
 services:
   springboot:
     image: twoosky/docker-springboot
-#    mem_limit: 128m
-#    volumes:
-#      - ./:/app
+    mem_limit: 128m
+    volumes:
+      - ./:/app
     environment:
       - MYSQL_HOST=docker-springboot-mysql.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
       - MYSQL_USER=root
