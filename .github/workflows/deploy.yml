@@ -52,9 +52,9 @@ jobs:
 
       - name: Generate deployment package
         run: |
-          cd docker-nginx
-          zip -r deploy.zip . -x '*.git*'
-          cp deploy.zip ../deploy.zip
+          mkdir deploy
+          cp docker-nginx/docker-compose.yml deploy/
+          zip -r deploy.zip deploy/* -x '*.git*'
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
@@ -63,7 +63,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: docker-springboot-app
           environment_name: Dockerspringbootapp-env-1
-          # version_label: deploy-${{steps.current-time.outputs.formattedTime}}
+          version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
           deployoment_package: deploy.zip
 
