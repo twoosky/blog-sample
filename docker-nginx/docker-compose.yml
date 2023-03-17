@@ -2,15 +2,15 @@ version: "3"
 services:
   springboot:
     image: twoosky/docker-springboot
-    mem_limit: 128m
+#    mem_limit: 128m
 #    volumes:
 #      - ./:/app
     environment:
-      MYSQL_HOST: docker-springboot-mysql.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
-      MYSQL_USER: root
-      MYSQL_ROOT_PASSWORD: dlgksmf4051
-      MYSQL_DATABASE: myapp
-      MYSQL_PORT: 3306
+      - MYSQL_HOST=docker-springboot-mysql.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=dlgksmf4051
+      - MYSQL_DATABASE=myapp
+      - MYSQL_PORT=3306
 
   nginx:
     restart: always
