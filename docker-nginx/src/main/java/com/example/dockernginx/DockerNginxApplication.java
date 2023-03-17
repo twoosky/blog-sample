@@ -9,5 +9,4 @@ public class DockerNginxApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DockerNginxApplication.class, args);
 	}
-
 }
