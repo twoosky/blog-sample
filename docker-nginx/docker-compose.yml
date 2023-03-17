@@ -2,7 +2,7 @@ version: "3"
 services:
   springboot:
     image: twoosky/docker-springboot
-    mem_limit: 128m
+#    mem_limit: 128m
     volumes:
       - ./:/app
     environment:

@@ -45,8 +45,8 @@ jobs:
           format: YYYY-MM-DDTHH-mm-ss
           utcOffset: "+09:00"
 
-      - name: generate deployment pacakge
-        run: zip -r deploy.zip .
+      - name: Generate deployment package
+        run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21

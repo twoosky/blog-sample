@@ -43,8 +43,8 @@ jobs:
           docker push twoosky/docker-springboot
           docker push twoosky/docker-nginx
       
-      - name: generate deployment pacakge
-        run: zip -r deploy.zip ./docker-nginx
+      - name: Generate deployment package
+        run: zip -r deploy.zip ./docker-nginx -x '*.git*'
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2
