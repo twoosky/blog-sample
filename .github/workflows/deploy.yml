@@ -43,7 +43,14 @@ jobs:
           docker push twoosky/docker-springboot
           docker push twoosky/docker-nginx
 
-      - name: 현재 시간 가져오기
+      - name: Generate deployment package
+        run: |
+          mkdir -p deploy
+          cp ./docker-nginx/build/libs/*.jar deploy/application.jar
+          cp -r ./docker-nginx/Dockerrun.aws.json deploy/Dockerrun.aws.json
+          cd deploy && zip -r deploy.zip .
+
+      - name: Get current time
         uses: 1466587594/get-current-time@v2
         id: current-time
         with:
@@ -59,7 +66,7 @@ jobs:
           environment_name: Dockerspringbootapp-env
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
-          deployoment_package: Dockerrun.aws.json
+          deployoment_package: deploy/deploy.zip
 
 
 
