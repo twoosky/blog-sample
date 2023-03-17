@@ -50,6 +50,12 @@ jobs:
           format: YYYY-MM-DDTHH-mm-ss
           utcOffset: "+09:00"
 
+      - name: Generate deployment package
+        run: |
+          cd docker-nginx
+          zip -r deploy.zip . -x '*.git*'
+          cp deploy.zip ../deploy.zip
+
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
@@ -59,7 +65,7 @@ jobs:
           environment_name: Dockerspringbootapp-env-1
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
-          deployoment_package: docker-nginx/docker-compose.yml
+          deployoment_package: deploy.zip
 
 
 
