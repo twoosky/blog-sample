@@ -42,9 +42,6 @@ jobs:
           docker build ./docker-nginx/nginx -t twoosky/docker-nginx
           docker push twoosky/docker-springboot
           docker push twoosky/docker-nginx
-      
-      - name: Generate deployment package
-        run: zip -r deploy.zip ./docker-nginx -x '*.git*'
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2
@@ -62,7 +59,7 @@ jobs:
           environment_name: Dockerspringbootapp-env-1
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
-          deployoment_package: deploy.zip
+          deployoment_package: docker-nginx/docker-compose.yml
 
 
 
