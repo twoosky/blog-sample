@@ -3,11 +3,8 @@ services:
   springboot:
     image: twoosky/docker-springboot
     mem_limit: 128m
-    environment:
-      MYSQL_HOST: $MYSQL_HOST
-      MYSQL_USER: $MYSQL_USER
-      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
-      MYSQL_PORT: $MYSQL_PORT
+    env_file:
+      - .env
 
   nginx:
     restart: always
