@@ -10,4 +10,4 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect
-          storage_engine: innodb
+
