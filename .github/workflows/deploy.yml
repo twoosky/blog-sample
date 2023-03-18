@@ -52,9 +52,9 @@ jobs:
 
       - name: Generate deployment package
         run: |
-          mkdir deploy
-          cp docker-nginx/* deploy/
-          zip -r deploy.zip deploy/* -x '*.git*'
+          cd docker-nginx
+          zip -r deploy.zip . -x '*.git*'
+          mv deploy.zip ../
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
