@@ -57,7 +57,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: docker-springboot-app
           environment_name: Dockerspringbootapp-env
-          existing_bucket_name: elasticbeanstalk-ap-northeast-2-032755476546
+          # existing_bucket_name: elasticbeanstalk-ap-northeast-2-032755476546
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
           deployoment_package: docker-nginx/docker-compose.yml
