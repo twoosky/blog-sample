@@ -11,8 +11,8 @@ services:
       - MYSQL_ROOT_PASSWORD=dlgksmf4051
       - MYSQL_DATABASE=myapp
       - MYSQL_PORT=3306
-    ports:
-      - "8080:8080"
+#    ports:
+#      - "8080:8080"
 #
 #  nginx:
 #    restart: always
