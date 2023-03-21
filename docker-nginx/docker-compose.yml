@@ -12,7 +12,7 @@ services:
 #      - MYSQL_DATABASE=myapp
 #      - MYSQL_PORT=3306
     ports:
-      - "8080:8080"
+      - "5000:5000"
 #
 #  nginx:
 #    restart: always
