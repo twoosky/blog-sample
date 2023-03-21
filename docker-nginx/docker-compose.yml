@@ -13,11 +13,11 @@ services:
 #      - MYSQL_PORT=3306
     ports:
       - "8080:8080"
-
-  nginx:
-    restart: always
-    image: twoosky/docker-nginx
-    ports:
-      - "80:80"
-    links:
-      - springboot
+#
+#  nginx:
+#    restart: always
+#    image: twoosky/docker-nginx
+#    ports:
+#      - "80:80"
+#    links:
+#      - springboot
