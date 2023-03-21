@@ -11,5 +11,5 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect
 server:
-  port: ${server.port}
+  port: 5000
 
