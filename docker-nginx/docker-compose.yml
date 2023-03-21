@@ -19,5 +19,5 @@ services:
     image: twoosky/docker-nginx
     ports:
       - "80:80"
-    depends_on:
+    links:
       - springboot
