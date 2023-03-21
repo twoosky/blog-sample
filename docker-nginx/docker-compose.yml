@@ -5,19 +5,19 @@ services:
     mem_limit: 128m
     volumes:
       - ./:/app
-    environment:
-      - MYSQL_HOST=docker-springboot-mysql.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
-      - MYSQL_USER=root
-      - MYSQL_ROOT_PASSWORD=dlgksmf4051
-      - MYSQL_DATABASE=myapp
-      - MYSQL_PORT=3306
+#    environment:
+#      - MYSQL_HOST=docker-springboot-mysql.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
+#      - MYSQL_USER=root
+#      - MYSQL_ROOT_PASSWORD=dlgksmf4051
+#      - MYSQL_DATABASE=myapp
+#      - MYSQL_PORT=3306
     ports:
       - "8080:8080"
 
-#  nginx:
-#    restart: always
-#    image: twoosky/docker-nginx
-#    ports:
-#      - "80:80"
-#    links:
-#      - springboot
+  nginx:
+    restart: always
+    image: twoosky/docker-nginx
+    ports:
+      - "80:80"
+    links:
+      - springboot

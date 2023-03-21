@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?serverTimezone=UTC&characterEncoding=UTF-8
-    username: ${MYSQL_USER}
-    password: ${MYSQL_ROOT_PASSWORD}
+    url: jdbc:mysql://${mysql.host}:${mysql.port}/${mysql.database}?serverTimezone=UTC&characterEncoding=UTF-8
+    username: ${mysql.user}
+    password: ${mysql.root.password}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -10,4 +10,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect
+server:
+  port: ${server.port}
 
