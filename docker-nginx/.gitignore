@@ -6,6 +6,7 @@ build/
 !**/src/test/**/build/
 mysql
 .env
+log/
 
 ### STS ###
 .apt_generated
