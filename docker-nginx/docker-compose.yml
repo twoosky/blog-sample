@@ -13,16 +13,14 @@ services:
 #      - MYSQL_PORT=3306
     env_file:
       - .env
-#    ports:
-#      - "8080:8080"
-
-  nginx:
-    restart: always
-    image: twoosky/docker-nginx
-    mem_limit: 128m
-#    volumes:
-#      - ./log:/var/log/nginx
     ports:
-      - "80:80"
-    links:
-      - springboot
+      - "80:8080"
+
+#  nginx:
+#    restart: always
+#    image: twoosky/docker-nginx
+#    mem_limit: 128m
+#    ports:
+#      - "80:80"
+#    links:
+#      - springboot
