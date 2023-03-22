@@ -19,8 +19,9 @@ services:
   nginx:
     restart: always
     image: twoosky/docker-nginx
-    volumes:
-      - ./log:/var/log/nginx
+    mem_limit: 128m
+#    volumes:
+#      - ./log:/var/log/nginx
     ports:
       - "80:80"
     links:
