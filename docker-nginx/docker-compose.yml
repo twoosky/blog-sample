@@ -11,13 +11,17 @@ services:
 #      - MYSQL_ROOT_PASSWORD=dlgksmf4051
 #      - MYSQL_DATABASE=myapp
 #      - MYSQL_PORT=3306
-    ports:
-      - "5000:8080"
-#
-#  nginx:
-#    restart: always
-#    image: twoosky/docker-nginx
+    env_file:
+      - .env
 #    ports:
-#      - "80:80"
-#    links:
-#      - springboot
+#      - "8080:8080"
+
+  nginx:
+    restart: always
+    image: twoosky/docker-nginx
+    volumes:
+      - ./log:/var/log/nginx
+    ports:
+      - "80:80"
+    links:
+      - springboot
