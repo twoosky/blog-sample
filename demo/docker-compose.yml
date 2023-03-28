@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  springboot:
+    image: "twoosky/springboot-demo"
+    environment:
+       - RDS_HOSTNAME=database-demo.cgztrz6ixthx.ap-northeast-2.rds.amazonaws.com
+       - RDS_USERNAME=admin
+       - RDS_PASSWORD=dlgksmf4051
+       - RDS_DB_NAME=myapp
+       - RDS_PORT=3306
+    restart: "always"
+
+  nginx:
+    image: "twoosky/nginx-demo"
+    ports:
+      - "80:80"
+    restart: "always"
