@@ -21,12 +21,12 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: |
-          cd docker-nginx
+          cd demo
           chmod +x ./gradlew
 
       - name: Build with Gradle
         run: |
-          cd docker-nginx
+          cd demo
           ./gradlew clean build -x test
 
       - name: Login to Docker Hub
@@ -38,10 +38,10 @@ jobs:
 
       - name: Build Docker Image & Push to Docker Hub
         run: |
-          docker build ./docker-nginx/ -t twoosky/docker-springboot
-          docker build ./docker-nginx/nginx -t twoosky/docker-nginx
-          docker push twoosky/docker-springboot
-          docker push twoosky/docker-nginx
+          docker build ./demo/ -t twoosky/springboot-demo
+          docker build ./demo/nginx -t twoosky/nginx-demo
+          docker push twoosky/springboot-demo
+          docker push twoosky/nginx-demo
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2
@@ -55,12 +55,11 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: docker-springboot-app
-          environment_name: Dockerspringbootapp-env
-          # existing_bucket_name: elasticbeanstalk-ap-northeast-2-032755476546
+          application_name: docker-springboot
+          environment_name: Dockerspringboot-env
           version_label: deploy-${{steps.current-time.outputs.formattedTime}}
           region: ap-northeast-2
-          deployment_package: docker-nginx/docker-compose.yml
+          deployment_package: demo/docker-compose.yml
 
 
 
