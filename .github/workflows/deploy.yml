@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Docker Image & Push to Docker Hub
         run: |
-          docker build ./github-action-EB -t twoosky/springboot-demo
+          docker build ./github-action-EB/ -t twoosky/springboot-demo
           docker build ./github-action-EB/nginx -t twoosky/nginx-demo
           docker push twoosky/springboot-demo
           docker push twoosky/nginx-demo
