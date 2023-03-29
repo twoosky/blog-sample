@@ -16,3 +16,6 @@ Github Action으로 AWS Elastic Beanstalk에 배포하기 위한 테스트용 �
 
 ### EB 수동 배포 정리글
 * [Spring Boot 프로젝트 Elastic beanstalk에 수동 배포하기](https://twosky.tistory.com/55)
+<br></br>
+## 아키텍처
+<img src="https://user-images.githubusercontent.com/50009240/228480149-9e071c6f-b8fa-4d7d-b64a-286993b8df36.png" width="650" height="250">
